@@ -45,7 +45,7 @@ class PerfTestConfig:
     def __init__(self, mode: str, ip_file_path: str):
         self.ssh_port = 22
         self.mode = mode
-        self.username = os.getenv('PERF_TEST_USER', 'metaxadmin')
+        self.username = os.getenv('PERF_TEST_USER', 'admin')
         self.password = os.getenv('PERF_TEST_PASS')
         self.node_list = []
         self.ip_file_path = ip_file_path
